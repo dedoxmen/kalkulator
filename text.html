@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Program napisany obiektwo
+       /* class kalkulator {
+            constructor() {
+                this.wynik = 0
+            }
+            
+            dodaj(a, b) {
+                this.wynik = a + b;
+            }
+            odejmij(a, b) {
+                this.wynik = a - b;
+            }
+
+            wyswietlwynik() {
+                console.log("Wynik: " + this.wynik)
+            }
+        }
+        const kalkulator1 = new kalkulator();
+        kalkulator1.dodaj(53,5);
+        kalkulator1.wyswietlwynik(); */
+
+        //PARADYGMAT FUNKCYJNY
+        function dodaj(a, b) {
+            return a + b;
+        }
+        function odejmij(a, b) {
+            return a - b;
+        }
+
+        function wyswietlwynik(wynik) {
+            console.log("Wynik: " + wynik)
+        }
+
+        function obliczenia(operacja, a, b) {
+            const wynik = operacja(a, b);
+            wyswietlwynik(wynik);
+        }
+        const x=5;
+        const y=18;
+        obliczenia(dodaj, x, y)
+        
+    </script>
+</body>
+</html>
